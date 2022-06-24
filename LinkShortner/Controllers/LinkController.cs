@@ -24,7 +24,7 @@ namespace LinkShortner.Controllers
         }
 
         [HttpPost]
-        public IActionResult ShortenUrl(string url)
+        public IActionResult ShortenUrl(string url, string path = "")
         {
             if (string.IsNullOrEmpty(url))
             {
@@ -38,21 +38,32 @@ namespace LinkShortner.Controllers
 
             string domain = configuration.GetSection("ShortUrl").Value;
 
-            string uniqueKey = Guid.NewGuid().ToString().Substring(0, 6);
+            if (string.IsNullOrEmpty(path))
+            {
+                path = Guid.NewGuid().ToString().Substring(0, 6);
+            }
+            else
+            {
+                if (db.Urls.Any(u => u.Key == path))
+                {
+                    return BadRequest("Path exists. Insert another path.");
+                }
+            }
+
             Urls newUrl = new Urls()
             {
                 Url = url,
-                Key = uniqueKey
+                Key = path
             };
 
             db.Urls.Add(newUrl);
             db.SaveChanges();
-            return Ok(domain + "/" + uniqueKey);
+            return Ok(domain + "/" + path);
 
 
         }
 
-       
+
 
     }
 }
