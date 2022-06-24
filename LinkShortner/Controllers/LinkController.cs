@@ -30,7 +30,12 @@ namespace LinkShortner.Controllers
             {
                 return BadRequest("Url Is Empty");
             }
-            
+
+            if (!url.Contains("http"))
+            {
+                url = $"http://{url}";
+            }
+
             string domain = configuration.GetSection("ShortUrl").Value;
 
             string uniqueKey = Guid.NewGuid().ToString().Substring(0, 6);

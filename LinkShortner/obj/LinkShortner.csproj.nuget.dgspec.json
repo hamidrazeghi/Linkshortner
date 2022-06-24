@@ -1,23 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hamid\\Source\\github\\LinkShortner\\LinkShortner\\LinkShortner.csproj": {}
+    "F:\\Users\\Moein\\Source\\Repos\\Linkshortner\\LinkShortner\\LinkShortner.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hamid\\Source\\github\\LinkShortner\\LinkShortner\\LinkShortner.csproj": {
+    "F:\\Users\\Moein\\Source\\Repos\\Linkshortner\\LinkShortner\\LinkShortner.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hamid\\Source\\github\\LinkShortner\\LinkShortner\\LinkShortner.csproj",
+        "projectUniqueName": "F:\\Users\\Moein\\Source\\Repos\\Linkshortner\\LinkShortner\\LinkShortner.csproj",
         "projectName": "LinkShortner",
-        "projectPath": "C:\\Users\\Hamid\\Source\\github\\LinkShortner\\LinkShortner\\LinkShortner.csproj",
-        "packagesPath": "C:\\Users\\Hamid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hamid\\Source\\github\\LinkShortner\\LinkShortner\\obj\\",
+        "projectPath": "F:\\Users\\Moein\\Source\\Repos\\Linkshortner\\LinkShortner\\LinkShortner.csproj",
+        "packagesPath": "C:\\Users\\Moein\\.nuget\\packages\\",
+        "outputPath": "F:\\Users\\Moein\\Source\\Repos\\Linkshortner\\LinkShortner\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Hamid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Moein\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -84,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
